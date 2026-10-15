@@ -1,0 +1,23 @@
+:root { color-scheme: light dark; --acento: #1f5fd6; --linha: #d7dfeb; --erro: #c6373a; --muted: #5b6b82; }
+@media (prefers-color-scheme: dark) { :root { --linha: #26344f; --muted: #97a6bf; --acento: #6aa2ff; --erro: #ff7b7d; } }
+* { box-sizing: border-box; }
+body { width: 340px; margin: 0; padding: 14px; font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { text-align: center; }
+h1 { font-size: 18px; margin: 0; }
+h1 span { color: var(--acento); }
+.sub, .aviso, .contagem { color: var(--muted); margin: 6px 0; text-align: center; }
+.chave { display: flex; gap: 8px; align-items: center; justify-content: center; font-weight: 600; margin-top: 10px; }
+.lista { list-style: none; margin: 8px 0; padding: 0; max-height: 220px; overflow: auto; border: 1px solid var(--linha); border-radius: 8px; }
+.lista li { display: flex; gap: 6px; align-items: center; justify-content: space-between; padding: 6px 8px; border-bottom: 1px solid var(--linha); }
+.lista li:last-child { border-bottom: 0; }
+.lista .url { overflow-wrap: anywhere; min-width: 0; font-size: 12px; }
+.botoes { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+button { border: 1px solid var(--linha); border-radius: 8px; padding: 6px 4px; background: transparent; color: inherit; cursor: pointer; }
+button:hover { border-color: var(--acento); }
+button.perigo { color: var(--erro); }
+button.pequeno { padding: 2px 6px; font-size: 12px; }
+.erro { color: var(--erro); min-height: 1em; margin: 8px 0 0; }
+[hidden] { display: none !important; }
+.confirmacao { margin-top: 8px; padding: 8px; border: 1px solid var(--erro); border-radius: 8px; }
+.confirmacao p { margin: 0 0 6px; text-align: center; }
+.confirmacao .botoes { grid-template-columns: 1fr 1fr; }

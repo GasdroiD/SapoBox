@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.sapobox.SapoBox</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>SapoBox</name>
+  <summary>Conversor de jogos, extrator de arquivos e downloader</summary>
+  <developer id="org.sapobox"><name>SapoBox</name></developer>
+  <description>
+    <p>O SapoBox reúne três ferramentas em um só aplicativo, com interface GTK 4 e libadwaita.</p>
+    <ul>
+      <li>Conversor: converte jogos (pasta, imagem exFAT ou FF-PFSC) para FF-PFSC ou LZ4, sem alterar o original.</li>
+      <li>Extrator: extrai arquivos 7z, ZIP e RAR, inclusive divididos em partes e protegidos por senha.</li>
+      <li>Downloader: baixa links HTTP e HTTPS com fila, pausa, retomada e download em várias partes ao mesmo tempo.</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">org.sapobox.SapoBox.desktop</launchable>
+  <provides>
+    <binary>sapobox</binary>
+  </provides>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <keywords>
+    <keyword>extrair</keyword><keyword>download</keyword><keyword>7z</keyword><keyword>rar</keyword>
+  </keywords>
+  <url type="homepage">https://github.com/GasdroiD/SapoBox</url>
+  <url type="bugtracker">https://github.com/GasdroiD/SapoBox/issues</url>
+  <content_rating type="oars-1.1"/>
+  <supports><control>pointing</control><control>keyboard</control></supports>
+  <requires><display_length compare="ge">600</display_length></requires>
+  <releases>
+    <release version="1.0" date="2026-10-15"><description><p>Primeira versão pública: Conversor, Extrator e Downloader, em português e inglês.</p></description></release>
+  </releases>
+</component>

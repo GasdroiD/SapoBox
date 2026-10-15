@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+build/
+dist/
+runtime/
+sapobox/converter/libconverter.so
+sapobox/converter/ampr_pack_cli

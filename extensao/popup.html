@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>SapoBox: capturar links</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Sapo<span>Box</span></h1>
+    <p class="sub">Captura os links de download e guarda numa lista.</p>
+  </header>
+  <label class="chave">
+    <input id="capturar" type="checkbox">
+    <span id="estado-captura">Captura desligada</span>
+  </label>
+  <p class="aviso" id="dica">Com a captura ligada, o download é cancelado no navegador e o link vai para a lista. Você baixa pelo SapoBox.</p>
+  <p class="contagem"><span id="contagem">0 links</span></p>
+  <ol id="lista" class="lista" aria-label="Links capturados"></ol>
+  <div class="botoes">
+    <button id="copiar" type="button">Copiar lista</button>
+    <button id="baixar" type="button">Baixar .txt</button>
+    <button id="limpar" type="button" class="perigo">Limpar</button>
+  </div>
+  <div id="painel-limpeza" class="confirmacao" role="alertdialog" aria-labelledby="pergunta-limpeza" hidden>
+    <p id="pergunta-limpeza">Apagar toda a lista de links?</p>
+    <div class="botoes">
+      <button id="cancelar-limpeza" type="button">Cancelar</button>
+      <button id="confirmar-limpeza" type="button" class="perigo">Apagar tudo</button>
+    </div>
+  </div>
+  <p id="erro" class="erro" role="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
